@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-06-29T12:51:38",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.4",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+            "violations": [
+                {
+                    "description": "Label connects more than one wire at 1346200, 546100",
+                    "items": [
+                        {
+                            "description": "Label 'CLK'",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 0.5461
+                            },
+                            "uuid": "aa8b5dce-5c05-4300-9816-5200004c834a"
+                        },
+                        {
+                            "description": "Wire, length 0.3529 mm",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 0.5715
+                            },
+                            "uuid": "5e9c65cc-ad2a-4353-ad01-d9f51632196e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "label_multiple_wires"
+                }
+            ]
+        }
+    ],
+    "source": "spectrum_analyzer.kicad_sch"
+}

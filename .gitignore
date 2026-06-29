@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# KiCad lock / backup files
+*.lck
+*-backups/
+fp-info-cache
+
+# Editor local history
+.history/
+
+# macOS
+.DS_Store
