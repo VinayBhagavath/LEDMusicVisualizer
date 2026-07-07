@@ -5,6 +5,10 @@ to an MP3 played from a laptop — no microphone involved. The laptop analyzes
 the actual audio data as it plays and streams a volume level to the Arduino
 over serial, which displays it as a bar graph across the matrix.
 
+## Circuit Diagram
+
+![Top-down LED circuit](Top-Down%20LED%20Circuit.JPG)
+
 ## Hardware
 
 - Arduino Uno R3
